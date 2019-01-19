@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace shesharp_01
+﻿namespace shesharp_01
 {
     class ContaPoupanca : Conta
     {
@@ -16,5 +10,6 @@ namespace shesharp_01
             this.CPF = CPF;
         }
 
+        public ContaPoupanca() { }
     }
 }

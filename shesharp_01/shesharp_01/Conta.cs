@@ -15,26 +15,24 @@ namespace shesharp_01
         public string Agencia { get; set; }
         public string CPF { get; set; }
         public string Telefone { get; set; }
-        private decimal LimiteDeChequeEspecial { get; set; }
+        
 
         public void Deposita(decimal valorDeposito)
         {
-            //this.Saldo = this.Saldo + valorDeposito;
-            this.Saldo += valorDeposito;
+            Saldo += valorDeposito;
         }
 
         public void Sacar(decimal valorSaque)
         {
-            if (this.Saldo >= valorSaque)
+            if (Saldo >= valorSaque)
             {
-                this.Saldo -= valorSaque;
+                Saldo -= valorSaque;
             }
-
         }
 
-        public decimal Extrato()
+        public decimal getSaldo()
         {
-            return this.Saldo;
+            return Saldo;
         }
     }
 
