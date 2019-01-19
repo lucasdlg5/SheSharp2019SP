@@ -16,5 +16,26 @@ namespace shesharp_01
         public string CPF { get; set; }
         public string Telefone { get; set; }
         private decimal LimiteDeChequeEspecial { get; set; }
+
+        public void Deposita(decimal valorDeposito)
+        {
+            //this.Saldo = this.Saldo + valorDeposito;
+            this.Saldo += valorDeposito;
+        }
+
+        public void Sacar(decimal valorSaque)
+        {
+            if (this.Saldo >= valorSaque)
+            {
+                this.Saldo -= valorSaque;
+            }
+
+        }
+
+        public decimal Extrato()
+        {
+            return this.Saldo;
+        }
     }
+
 }

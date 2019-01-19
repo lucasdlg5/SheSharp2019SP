@@ -8,24 +8,12 @@ namespace shesharp_01
 {
     class ContaPoupanca : Conta
     {
-        public void Deposita(decimal valorDeposito)
+        public ContaPoupanca(string Nome, string Numero, string Agencia, string CPF)
         {
-            //this.Saldo = this.Saldo + valorDeposito;
-            this.Saldo += valorDeposito;
-        }
-
-        public void Sacar(decimal valorSaque)
-        {
-            if (this.Saldo >= valorSaque)
-            {
-                this.Saldo -= valorSaque;
-            }
-
-        }
-
-        public decimal Extrato()
-        {
-            return this.Saldo;
+            this.Nome = Nome;
+            this.Numero = Numero;
+            this.Agencia = Agencia;
+            this.CPF = CPF;
         }
 
     }

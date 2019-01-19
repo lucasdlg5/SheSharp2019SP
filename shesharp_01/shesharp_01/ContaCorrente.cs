@@ -20,23 +20,6 @@ namespace shesharp_01
             //this.Telefone = Telefone;
         }
 
-        public void Deposita(decimal valorDeposito)
-        {
-            this.Saldo += valorDeposito;
-        }
-
-        public void Sacar(decimal valorSaque)
-        {
-            if ((this.Saldo + LimiteDeChequeEspecial) >= valorSaque)
-            {
-                this.Saldo -= valorSaque;
-            }
-        }
-
-        public decimal Extrato()
-        {
-            return this.Saldo;
-        }
 
     }
 }
