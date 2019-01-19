@@ -8,9 +8,6 @@ namespace shesharp_01
 {
     class ContaPoupanca : Conta
     {
- 
-
-
         public void Deposita(decimal valorDeposito)
         {
             //this.Saldo = this.Saldo + valorDeposito;
@@ -23,10 +20,7 @@ namespace shesharp_01
             {
                 this.Saldo -= valorSaque;
             }
-            //else
-            //{
-            //    this.Saldo -= valorSaque;
-            //}
+
         }
 
         public decimal Extrato()

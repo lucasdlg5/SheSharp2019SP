@@ -8,7 +8,6 @@ namespace shesharp_01
 {
     class ContaCorrente : Conta
     {
-        //Java é ruim primeiramente
         private decimal LimiteDeChequeEspecial { get; set; }
 
         //ctor e apertar TAB 2 vezes para criar o construtor automaticamente
@@ -19,13 +18,10 @@ namespace shesharp_01
             this.Agencia = Agencia;
             this.CPF = CPF;
             //this.Telefone = Telefone;
-            
-
         }
 
         public void Deposita(decimal valorDeposito)
         {
-            //this.Saldo = this.Saldo + valorDeposito;
             this.Saldo += valorDeposito;
         }
 
@@ -34,10 +30,7 @@ namespace shesharp_01
             if ((this.Saldo + LimiteDeChequeEspecial) >= valorSaque)
             {
                 this.Saldo -= valorSaque;
-            }//else
-            //{
-            //    this.Saldo -= valorSaque;
-            //}
+            }
         }
 
         public decimal Extrato()
