@@ -8,7 +8,7 @@ namespace Estacionamento
 {
     class Carro : Automovel
     {
-        public Carro(int id, string tipo, int nPortas, string cor, string marca, string placa)
+        public Carro(int id, string tipo, int nPortas, string cor, string marca, string placa, int nJanela, Pessoa dono)
         {
             idAutomovel = id;
             Tipo = tipo;
@@ -16,12 +16,14 @@ namespace Estacionamento
             Cor = cor;
             Marca = marca;
             Placa = placa;
+            NumeroJanelas = nJanela;
+            DonoCarro = dono;
         }
 
         public override string ToString()
         {
             
-                return "\n-------------------------\nId: " + idAutomovel + "\nTipo: "+Tipo+"\nNumero de Portas: "+NumeroPortas+"\nCor: "+Cor+"\nMarca: "+Marca+"\nPlaca: "+Placa;
+                return "\n-------------------------\nId: " + idAutomovel + "\nDono do Carro: "+DonoCarro+"\nTipo: "+Tipo+"\nNumero de Portas: "+NumeroPortas+"\nCor: "+Cor+"\nMarca: "+Marca+"\nPlaca: "+Placa+"\nNumero de Janelas: "+NumeroJanelas;
            
         }
     }

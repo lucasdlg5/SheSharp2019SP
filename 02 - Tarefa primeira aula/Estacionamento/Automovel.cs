@@ -14,7 +14,8 @@ namespace Estacionamento
         protected string Cor { get; set; }
         protected string Marca { get; set; }
         protected string Placa { get; set; }
-
+        protected int NumeroJanelas { get; set; }
+        protected Pessoa DonoCarro { get; set; }
         public override string ToString()
         {
             return "\n-------------------------\nId: " + idAutomovel + "\nTipo: " + Tipo + "\nNumero de Portas: " + NumeroPortas + "\nCor: " + Cor + "\nMarca: " + Marca + "\nPlaca: " + Placa;
